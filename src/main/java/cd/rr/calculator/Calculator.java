@@ -26,6 +26,11 @@ public class Calculator {
                 System.out.println("Choose your operation:");
                 int n = input.nextInt();
 
+                if (n ==6){System.out.println("Good bye!");
+                    System.exit(0);}
+
+                else{
+
                 System.out.println("First Number: ");
                 double firstNumber = input.nextDouble();
                 System.out.println("Second Number: ");
@@ -58,10 +63,11 @@ public class Calculator {
                         double remainder = firstNumber % secondNumber;
                         System.out.println("Result:" + (int) remainder);
                         break;
-                    case 6:
-                    default:
-                        System.out.println("Good bye!");
-                        System.exit(0);
+
+
+                    }
+
+
 
 
                 }
