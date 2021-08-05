@@ -21,6 +21,29 @@ public class Calculator {
         System.out.println("5: Exit");
 
         System.out.println("Choose your operation:");
+        int n = input.nextInt();
+
+        switch (n){
+            case 1:
+                double add = firstNumber + secondNumber;
+                System.out.println(add);
+                break;
+            case 2:
+                double sub = firstNumber - secondNumber;
+                System.out.println(sub);
+                break;
+            case 3:
+                double multiply = firstNumber*secondNumber;
+                System.out.println(multiply);
+                break;
+            case 4:
+                double div = firstNumber/secondNumber;
+                break;
+            case 5: default:
+                System.exit(0);
+
+        }
+
 
 
 
