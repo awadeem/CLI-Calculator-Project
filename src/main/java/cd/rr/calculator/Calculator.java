@@ -6,7 +6,7 @@ public class Calculator {
     public static void main(String[] args) {
         // Your solution here!
 
-        for (int i = 0; i <= 6; i++) {
+        for(;;){
             Scanner input = new Scanner(System.in);
             System.out.println("Welcome to the CLI Calculator");
             System.out.println("-----------------------------");
