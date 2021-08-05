@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         // Your solution here!
-        for(int i=0;i<=5;i++) {
+        for(int i=0;i<=6;i++) {
 
             Scanner input = new Scanner(System.in);
             System.out.println("Welcome to the CLI Calculator");
@@ -15,7 +15,8 @@ public class Calculator {
             System.out.println("2: Subtraction");
             System.out.println("3: Multiplication");
             System.out.println("4: Division");
-            System.out.println("5: Exit");
+            System.out.println("5: Remainder Operator");
+            System.out.println("6: Exit");
 
             System.out.println("Choose your operation:");
             int n = input.nextInt();
@@ -50,6 +51,10 @@ public class Calculator {
 
                     break;
                 case 5:
+                    double remainder = firstNumber % secondNumber;
+                    System.out.println("Result:" + (int) remainder);
+                    break;
+                case 6:
                 default:
                     System.exit(0);
 
