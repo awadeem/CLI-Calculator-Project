@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         // Your solution here!
+           int i=0;
+            while ( i < 1) {
 
-        for(;;){
             Scanner input = new Scanner(System.in);
             System.out.println("Welcome to the CLI Calculator");
             System.out.println("-----------------------------");
@@ -69,7 +70,9 @@ public class Calculator {
 
 
 
+
                 }
+
             }
 
 
