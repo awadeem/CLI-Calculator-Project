@@ -5,16 +5,13 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         // Your solution here!
-        for(int i=0;i<=5;i++) {
+            for(int i=0;i<=5;i++) {
 
             Scanner input = new Scanner(System.in);
             System.out.println("Welcome to the CLI Calculator");
             System.out.println("-----------------------------");
 
-            System.out.println("First Number: ");
-            double firstNumber = input.nextDouble();
-            System.out.println("Second Number: ");
-            double secondNumber = input.nextDouble();
+            System.out.println("Operations:");
 
             System.out.println("1: Addition");
             System.out.println("2: Subtraction");
@@ -24,6 +21,14 @@ public class Calculator {
 
             System.out.println("Choose your operation:");
             int n = input.nextInt();
+
+            System.out.println("First Number: ");
+            double firstNumber = input.nextDouble();
+            System.out.println("Second Number: ");
+            double secondNumber = input.nextDouble();
+
+
+
 
             switch (n) {
                 case 1:
@@ -50,21 +55,12 @@ public class Calculator {
                     break;
                 case 5:
                 default:
+                    System.out.println("Good bye!");
                     System.exit(0);
 
 
             }
         }
-       // System.out.println("Result:"+ n);
-
-
-
-
-
-
-
-
-
 
 
     }
