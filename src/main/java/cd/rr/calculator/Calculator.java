@@ -58,5 +58,11 @@ public class Calculator {
         }
        // System.out.println("Result:"+ n);
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 9cc731d6cb0aca17b7bc17d1b65027ec1a3fa5d0
     }
 }
