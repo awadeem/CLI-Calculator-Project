@@ -6,29 +6,33 @@ public class Calculator {
     public static void main(String[] args) {
         // Your solution here!
 
-              for (int i = 0; i <= 6; i++) {
-                  Scanner input = new Scanner(System.in);
-                System.out.println("Welcome to the CLI Calculator");
-                System.out.println("-----------------------------");
+        for (int i = 0; i <= 6; i++) {
+            Scanner input = new Scanner(System.in);
+            System.out.println("Welcome to the CLI Calculator");
+            System.out.println("-----------------------------");
 
 
-                System.out.println("Operations:");
+            System.out.println("Operations:");
 
 
-                System.out.println("1: Addition");
-                System.out.println("2: Subtraction");
-                System.out.println("3: Multiplication");
-                System.out.println("4: Division");
-                System.out.println("5: Remainder Operator");
-                System.out.println("6: Exit");
+            System.out.println("1: Addition");
+            System.out.println("2: Subtraction");
+            System.out.println("3: Multiplication");
+            System.out.println("4: Division");
+            System.out.println("5: Remainder Operator");
+            System.out.println("6: Exit");
 
-                System.out.println("Choose your operation:");
-                int n = input.nextInt();
+            System.out.println("Choose your operation:");
+            int n = input.nextInt();
 
-                if (n ==6){System.out.println("Good bye!");
-                    System.exit(0);}
+            if (n == 6) {
+                System.out.println("Good bye!");
+                System.exit(0);
+            }
+                else if (n>6){
+                System.out.println("Invalid operation");
 
-                else{
+            }else {
 
                 System.out.println("First Number: ");
                 double firstNumber = input.nextDouble();
@@ -61,8 +65,7 @@ public class Calculator {
                     case 5:
                         double remainder = firstNumber % secondNumber;
                         System.out.println("Result:" + (int) remainder);
-                        break;}
-
+                        break;
 
 
 
@@ -72,4 +75,5 @@ public class Calculator {
 
         }
     }
+}
 
