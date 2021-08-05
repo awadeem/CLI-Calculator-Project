@@ -22,6 +22,7 @@ public class Calculator {
         System.out.println("Second Number: ");
         double secondNumber = input.nextDouble();
 
+        System.out.println("Michiah was here");
 
 
     }
