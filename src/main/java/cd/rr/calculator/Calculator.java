@@ -11,7 +11,9 @@ public class Calculator {
             System.out.println("Welcome to the CLI Calculator");
             System.out.println("-----------------------------");
 
+
             System.out.println("Operations:");
+
 
             System.out.println("1: Addition");
             System.out.println("2: Subtraction");
@@ -29,19 +31,18 @@ public class Calculator {
 
 
 
-
             switch (n) {
                 case 1:
                     double add = firstNumber + secondNumber;
-                    System.out.println("Result:" + add);
+                    System.out.println("Result:" + (int)add);
                     break;
                 case 2:
                     double sub = firstNumber - secondNumber;
-                    System.out.println("Result:" + sub);
+                    System.out.println("Result:" + (int) sub);
                     break;
                 case 3:
                     double multiply = firstNumber * secondNumber;
-                    System.out.println("Result:" + multiply);
+                    System.out.println("Result:" + (int) multiply);
                     break;
                 case 4:
                     if (secondNumber==0){
@@ -61,6 +62,8 @@ public class Calculator {
 
             }
         }
+
+
 
 
     }
