@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         // Your solution here!
-           int i=0;
-            while ( i < 1) {
-
+           boolean running = true;
+            while ( running) {
 
             Scanner input = new Scanner(System.in);
             System.out.println("Welcome to the CLI Calculator");
@@ -29,7 +28,8 @@ public class Calculator {
 
             if (n == 6) {
                 System.out.println("Good bye!");
-                System.exit(0);
+                running = false;
+
             } else if (n > 6) {
                 System.out.println("Invalid operation");
 
